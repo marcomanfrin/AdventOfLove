@@ -8,8 +8,8 @@ namespace AdventOfLove
 {
     public partial class FormCalendar : Form
     {
-        //int today = DateTime.Now.Day;
-        private int today = 25;
+        private int today = DateTime.Now.Day;
+        //private int today = 25;
         public FormCalendar()
         {
             InitializeComponent();
