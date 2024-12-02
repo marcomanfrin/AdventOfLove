@@ -2,8 +2,6 @@
 using System.Linq;
 using System.Windows.Forms;
 
-
-
 namespace AdventOfLove
 {
     public partial class FormCalendar : Form
@@ -13,7 +11,24 @@ namespace AdventOfLove
         public FormCalendar()
         {
             InitializeComponent();
+            AssignButtonsTags();
             EnableButtons(today);
+        }
+        private void AssignButtonsTags()
+        {
+            for (int i = 1; i <= 25; i++)
+            {
+                Button button = this.Controls.Find($"button{i}", true).FirstOrDefault() as Button;
+
+                if (button != null)
+                {
+                    button.Tag = i;
+                }
+                else
+                {
+                    Console.WriteLine($"Bottone con nome button{i} non trovato.");
+                }
+            }
         }
 
         private void EnableButtons(int today)
@@ -35,8 +50,19 @@ namespace AdventOfLove
 
         private void button_Click(object sender, EventArgs e)
         {
-            FormCit formCit = new FormCit(5);
-            formCit.Show();
+            Button button = sender as Button;
+
+            if (button != null)
+            {
+                int buttonId = (int)button.Tag;
+                FormCit formCit = new FormCit(buttonId);
+                formCit.Show();
+            }
+            else
+            {
+                FormCit formCit = new FormCit(0);
+                formCit.Show();
+            }
         }
     }
 }

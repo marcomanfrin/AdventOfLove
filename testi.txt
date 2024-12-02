@@ -1,5 +1,5 @@
 0, null
-1, Primo elemento
+1, Anche se morissi, voglio sapere che qualcuno mi ha amato. - Portgas D. Ace
 2, Secondo elemento
 3, Terzo elemento
 4, Quarto elemento
