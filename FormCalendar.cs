@@ -13,10 +13,10 @@ namespace AdventOfLove
         public FormCalendar()
         {
             InitializeComponent();
-            enabeButtons(today);
+            EnableButtons(today);
         }
 
-        private void enabeButtons(int today)
+        private void EnableButtons(int today)
         {
 
             for (int i = 1; i <= 25; i++)
