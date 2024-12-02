@@ -1,6 +1,6 @@
 ﻿namespace AdventOfLove
 {
-    partial class Form1
+    partial class FormCalendar
     {
         /// <summary>
         /// Required designer variable.
@@ -452,7 +452,7 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button_Click);
             // 
-            // Form1
+            // FormCalendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -461,7 +461,7 @@
             this.Controls.Add(this.tblCalendar);
             this.MaximumSize = new System.Drawing.Size(1300, 1300);
             this.MinimumSize = new System.Drawing.Size(1300, 1300);
-            this.Name = "Form1";
+            this.Name = "FormCalendar";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdventOfLove";

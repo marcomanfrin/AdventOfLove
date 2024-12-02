@@ -9,10 +9,18 @@ namespace AdventOfLove
     {
         public FormCit(int day)
         {
+            InitializeComponent();
             Dictionary<int, string> texts = new Dictionary<int, string>();
             texts = LoadText();
 
-            Cit.Text = texts[day];
+            if (texts.ContainsKey(day))
+            {
+                lblCit.Text = texts[day];
+            }
+            else
+            {
+                lblCit.Text = "Testo non trovato per il giorno specificato.";
+            }
         }
 
         public Dictionary<int, string> LoadText()

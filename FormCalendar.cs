@@ -2,12 +2,15 @@
 using System.Linq;
 using System.Windows.Forms;
 
+
+
 namespace AdventOfLove
 {
-    public partial class Form1 : Form
+    public partial class FormCalendar : Form
     {
-        int today = DateTime.Now.Day;
-        public Form1()
+        //int today = DateTime.Now.Day;
+        private int today = 25;
+        public FormCalendar()
         {
             InitializeComponent();
             enabeButtons(today);
@@ -15,7 +18,6 @@ namespace AdventOfLove
 
         private void enabeButtons(int today)
         {
-            int giornoCorrente = DateTime.Now.Day;
 
             for (int i = 1; i <= 25; i++)
             {
@@ -25,14 +27,15 @@ namespace AdventOfLove
                 Button bottone = this.Controls.Find(buttonName, true).FirstOrDefault() as Button;
                 if (bottone != null)
                 {
-                    bottone.Enabled = (i <= giornoCorrente);
+                    bottone.Enabled = (i <= today);
+                    bottone.Visible = (i <= today);
                 }
             }
         }
 
         private void button_Click(object sender, EventArgs e)
         {
-            FormCit formCit = new FormCit(today);
+            FormCit formCit = new FormCit(5);
             formCit.Show();
         }
     }

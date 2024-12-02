@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Cit = new System.Windows.Forms.Label();
+            this.lblCit = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Cit
+            // lblCit
             // 
-            this.Cit.AutoSize = true;
-            this.Cit.Font = new System.Drawing.Font("Arial", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cit.Location = new System.Drawing.Point(493, 345);
-            this.Cit.Name = "Cit";
-            this.Cit.Size = new System.Drawing.Size(75, 42);
-            this.Cit.TabIndex = 0;
-            this.Cit.Text = "text";
+            this.lblCit.AutoSize = true;
+            this.lblCit.Location = new System.Drawing.Point(281, 193);
+            this.lblCit.Name = "lblCit";
+            this.lblCit.Size = new System.Drawing.Size(35, 13);
+            this.lblCit.TabIndex = 0;
+            this.lblCit.Text = "lblCit";
             // 
             // FormCit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AdventOfLove.Properties.Resources.sfondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1124, 729);
-            this.Controls.Add(this.Cit);
-            this.MaximumSize = new System.Drawing.Size(1150, 800);
-            this.MinimumSize = new System.Drawing.Size(1150, 800);
+            this.ClientSize = new System.Drawing.Size(567, 396);
+            this.Controls.Add(this.lblCit);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(583, 435);
+            this.MinimumSize = new System.Drawing.Size(583, 435);
             this.Name = "FormCit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdventOfLove";
@@ -61,6 +61,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Cit;
+        private System.Windows.Forms.Label lblCit;
     }
 }
